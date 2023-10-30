@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <STYLE>
+        /* div{background-color: yellow;} */
+    /* class selector */
+    .red{background-color: antiquewhite;}
+    /* id selector */
+    #green{background-color: brown;}
+    /* child selector */
+div >p{color: red;
+background-color: blue;}
+/* decendant selector */
+div p{color:red;
+background-color:blue;}
+/* universal selector */
+*{
+    margin:0;
+    padding:0;
+}
+/* pseudo selector */
+/* a:visited{color: red;} */
+a:visited{color: green;}
+a:link{
+    color:blue ;
+}
+a:active{background-color: black;}
+a:hover{background-color: blueviolet;}
+p:first-child{background-color: blueviolet;}
+    </STYLE>
+</head>
+<body>
+    <main class="Rohit">
+        <p>I am first child</p>
+        <p>I am second child</p>
+</main>
+    <div class="red">
+        THIS IS A DIV TAG
+        <span>
+        <p>this is the child selector component</p>
+    </span>
+    </div>
+    <div id="green">
+        THIS IS ANOTHER DIV TAG
+    </div>
+    <div>
+        <a href="https://www.google.com">Go to google</a>
+        <a href="https://www.facebook.com">Go to facebook</a>
+    </div>
+</body>
+</html>
